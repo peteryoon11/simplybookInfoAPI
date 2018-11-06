@@ -95,7 +95,7 @@ func getMyBook(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 	}
 	//fmt.Println()
 	w.Header().Set("Content-Type", "application/json")
-	//w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Write(temp)
 
 }
@@ -113,5 +113,5 @@ func main() {
 	//router.POST("/getUserInfo", getUser)
 	//router.POST("/getUserInfo/:test", getUser)
 
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":8090", router))
 }
