@@ -108,7 +108,9 @@ func main() {
 	//router.POST(GetBookInfo.Uri(), getMyBook)
 	//router.POST(GetBookInfo.URI(), getMyBook)
 
-	router.POST("/service/book", getMyBook)
+	//router.POST("/service/book", getMyBook)
+	router.POST("/v1/service/book", getMyBook)
+	router.GET("/v1/service/book", getMyBook)
 
 	//router.POST("/getUserInfo", getUser)
 	//router.POST("/getUserInfo/:test", getUser)
