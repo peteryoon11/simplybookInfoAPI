@@ -28,4 +28,3 @@ ebookInfo    userAndBook  userInfo
 
 3개의 테이블 사용 중 
 
-ERD 를 추가 할까? 
